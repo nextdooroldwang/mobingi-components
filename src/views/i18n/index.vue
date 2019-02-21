@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import messages from './test.js'
 import Cookies from 'js-cookie'
     export default {
         data() {
