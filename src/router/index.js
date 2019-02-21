@@ -37,6 +37,19 @@ export const constantRouterMap = [
       component: () => import('@/views/dashboard/index')
     }]
   },
+  
+  {
+    path: '/i18n',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'I18n',
+        component: () => import('@/views/i18n/index'),
+        meta: { title: 'I18n', icon: 'table' }
+      },
+    ]
+  },
 
   {
     path: '/example',
