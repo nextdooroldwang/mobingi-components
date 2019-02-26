@@ -11,9 +11,10 @@ Mock.XHR.prototype.send = function() {
   }
   this.proxy_send(...arguments)
 }
-// Mock.setup({
-//   timeout: '350-600'
-// })
+
+Mock.setup({
+  timeout: '350-600'
+})
 
 // User
 Mock.mock(/\/user\/login/, 'post', userAPI.login)
